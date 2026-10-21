@@ -1,0 +1,78 @@
+
+name: Feature Request
+description: Suggest a new feature or improvement for VRViewer.
+title: "[Feature]: "
+labels: ["feature request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve VRViewer!
+
+        Please search existing issues first to see whether someone has already suggested this idea.
+
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing requests
+      options:
+        - label: I searched existing issues and did not find the same request.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the limitation or difficulty you currently experience.
+      placeholder: I would like to be able to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: Describe how you think VRViewer could address this problem.
+      placeholder: It would be useful if VRViewer could...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you found a workaround or another application that provides this functionality?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature area
+      options:
+        - Image capture or display
+        - OpenXR integration
+        - SteamVR integration
+        - Stereo blending or presentation settings
+        - User interface
+        - Performance
+        - Installation or licensing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Include examples, screenshots, or links that help explain the request.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Final checks
+      options:
+        - label: I understand that feature requests are public and that submission does not guarantee implementation.
+          required: true
