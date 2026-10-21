@@ -15,6 +15,32 @@ For downloads, installation instructions, and product information, visit the off
 
 See the official website for the latest feature list and system requirements.
 
+## System Requirements
+
+| Component | Requirement |
+|---|---|
+| Operating System | Windows 10 or Windows 11 (64-bit) |
+| Processor | 2-core CPU or better |
+| Memory | 4 GB RAM |
+| Graphics | GPU supporting the graphics APIs required by the selected source |
+| Supported Sources | SteamVR and OpenXR runtimes |
+| OpenXR Graphics APIs | Direct3D 11 (D3D11), Direct3D 12 (D3D12) |
+| Storage | 5 GB of free disk space |
+| Internet | Required for online license validation, updates, and downloads, where applicable |
+
+### VR Headset Compatibility
+
+VRViewer supports stereoscopic headsets using a conventional two-view layout (left and right eye). Quad-view rendering configurations are not supported.
+
+### Anti-Cheat Compatibility
+
+- **Easy Anti-Cheat (EAC):** Currently supported.
+- **BattlEye:** Not supported when using the OpenXR capture source.
+
+Anti-cheat compatibility may vary by game, capture source, and anti-cheat configuration. Support for one anti-cheat system does not guarantee compatibility with every game using it.
+
+*These are baseline recommendations, not guaranteed minimums. Windows 10 was tested in a virtual machine with 2 vCPUs and 2 GB RAM for installation and the UI/Test source only. OpenXR and SteamVR capture requirements have not yet been validated under these resource constraints. Hardware and runtime compatibility may vary.*
+
 ## Download
 
 Download the latest stable release from [GitHub Releases](https://github.com/leethemaxuser/VRViewer-Public/releases).
