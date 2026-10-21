@@ -1,0 +1,9 @@
+
+blank_issues_enabled: false
+contact_links:
+  - name: VRViewer Website
+    url: https://www.ltmtechnologies.com/vrviewer.html
+    about: Visit the official website for product information and documentation.
+  - name: Existing Issues
+    url: https://github.com/leethemaxuser/VRViewer-Public/issues
+    about: Search existing bug reports and feature requests before submitting.
