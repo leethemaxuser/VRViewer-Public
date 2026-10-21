@@ -39,7 +39,7 @@ Refer to the official documentation for detailed setup instructions and compatib
 - **Documentation:** [VRViewer Wiki](https://github.com/leethemaxuser/VRViewer-Public/wiki)
 - **Website:** [ltmtechnologies.com](https://www.ltmtechnologies.com/)
 
-When reporting a problem, include your VRViewer version, Windows version, OpenXR runtime, steps to reproduce the issue, and relevant logs. Remove personal information and sensitive data from logs before posting.
+When reporting a problem, include your VRViewer version, Windows version, OpenXR runtime, selected source, and steps to reproduce the issue. VRViewer does not currently generate application logs. If the OpenXR layer is involved, you may be able to provide its logs after removing sensitive information.
 
 ## Releases
 
