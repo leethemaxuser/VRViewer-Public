@@ -1,0 +1,115 @@
+
+name: Bug Report
+description: Report a crash, incorrect behavior, or compatibility problem in VRViewer.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with VRViewer!
+
+        Please search existing issues before submitting. Do not include passwords, license keys, personal information, or sensitive logs.
+
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing reports
+      options:
+        - label: I searched existing issues and did not find the same problem.
+          required: true
+
+  - type: input
+    id: vrviewer-version
+    attributes:
+      label: VRViewer version
+      description: "Find the version in the application or installer."
+      placeholder: "Example: 1.0.2"
+    validations:
+      required: true
+
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      description: Include your Windows edition and version if known.
+      placeholder: "Example: Windows 11 Pro, 25H2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: Problem type
+      options:
+        - Application crash or freeze
+        - Black screen or missing image
+        - OpenXR source problem
+        - SteamVR source problem
+        - Test source problem
+        - Incorrect image, pose, or FOV
+        - Stereo blending problem
+        - Installation or update problem
+        - Performance problem
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the problem
+      description: What happened? Include any error messages.
+      placeholder: Describe what you observed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List the steps needed to reproduce the problem.
+      placeholder: |
+        1. Launch VRViewer.
+        2. Select a source.
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: VR environment
+      description: Include your headset, OpenXR runtime, SteamVR version, and relevant hardware, as applicable.
+      placeholder: |
+        Headset:
+        OpenXR runtime:
+        SteamVR version:
+        GPU:
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: Paste relevant error messages or provide links to screenshots. Redact personal information and secrets.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Final checks
+      options:
+        - label: I understand that issue reports are public.
+          required: true
